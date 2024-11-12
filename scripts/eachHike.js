@@ -10,7 +10,7 @@ function displayHikeInfo() {
         .then(doc => {
             thisHike = doc.data();
             hikeCode = thisHike.code;
-            hikeName = doc.data().name;
+            hikeName = thisHike.name;
 
             // only populate title, and image
             document.getElementById("hikeName").innerHTML = hikeName;
