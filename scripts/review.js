@@ -26,6 +26,9 @@ stars.forEach((star, index) => {
             // Change the text content of stars to 'star' (filled)
             document.getElementById(`star${i + 1}`).textContent = 'star';
         }
+        for (let i = index + 1; i < 5; i++) {
+            document.getElementById(`star${i + 1}`).textContent = 'star_outline';
+        }
     });
 });
 

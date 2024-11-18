@@ -185,7 +185,7 @@ function saveBookmark(hikeDocID) {
                 // Use 'arrayUnion' to add the new bookmark ID to the 'bookmarks' array.
                 // This method ensures that the ID is added only if it's not already present, preventing duplicates.
                 bookmarks: firebase.firestore.FieldValue.arrayUnion(hikeDocID)
-                })
+            })
                 // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
                 .then(function () {
                     console.log("bookmark has been saved for" + hikeDocID);
